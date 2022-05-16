@@ -30,7 +30,7 @@ To solve this assignment i will do the following:
 The goal of this assignment was to demonstrate my knowledge within deep learning models used this semester, along with the building of a model which can predict facial expressions in images.
 
 ### Data source
-The data used in this assignment is from [kaggle](https://colab.research.google.com/github/RodolfoFerro/PyConCo20/blob/full-code/notebooks/Deep%20Learning%20Model.ipynb#scrollTo=59mL7DzN139i). 
+The data used in this assignment is from [kaggle](https://colab.research.google.com/github/RodolfoFerro/PyConCo20/blob/full-code/notebooks/Deep%20Learning%20Model.ipynb#scrollTo=59mL7DzN139i) (FER2013 dataset). 
 
 Official data description from above link: 
 The csv file contains two main columns, "emotion" and "pixels". The "emotion" column contains a numeric code ranging from 0 to 6, inclusive, for the emotion that is present in the image. The "pixels" column contains a string surrounded in quotes for each image. The contents of this string a space-separated pixel values in row major order. test.csv contains only the "pixels" column and your task is to predict the emotion column.
@@ -42,7 +42,7 @@ wget -O ../in/fer2013.csv https://www.dropbox.com/s/zi48lkarsg4kbry/fer2013.csv\
 
 
 ## Methods
-To solve this assignment i have worked with ```opencv``` in order to both calculate the histograms as well as for the general image processing (using the ```calcHist```, ```imread```, ```normalize``` and ```compareHist```). Futhermore i used the ```jimshow``` and ```jimshow_channel``` from the ```utils```-folder, along with the ```matplotlib``` for plotting and visualisation.
+Frist of all i made reused a helping function from [kaggle](https://colab.research.google.com/github/RodolfoFerro/PyConCo20/blob/full-code/notebooks/Deep%20Learning%20Model.ipynb#scrollTo=59mL7DzN139i), which helps loading the data as well as splits it into train_test (only a few adjustments in order to get it to run with my choise of methods). 
 
 ## Usage (reproducing results)
 For this .py script the following should be written in the command line:
