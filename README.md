@@ -42,19 +42,18 @@ wget -O ../in/fer2013.csv https://www.dropbox.com/s/zi48lkarsg4kbry/fer2013.csv\
 
 
 ## Methods
-Frist of all i made reused a helping function from [kaggle](https://colab.research.google.com/github/RodolfoFerro/PyConCo20/blob/full-code/notebooks/Deep%20Learning%20Model.ipynb#scrollTo=59mL7DzN139i), which helps loading the data as well as splits it into train_test (only a few adjustments in order to get it to run with my choise of methods). 
+Frist of all i made reused a helping function from [kaggle](https://colab.research.google.com/github/RodolfoFerro/PyConCo20/blob/full-code/notebooks/Deep%20Learning%20Model.ipynb#scrollTo=59mL7DzN139i), which helps loading the data as well as splits it into train_test (only a few adjustments in order to get it to run with my choise of methods). The methods used is ```tensorflow```operations like ``ÌmageDataGenerator```, ```load_img``` and ```img_to_array``` in terms of preprocessing, as well as initializing the model ```Sequential()``` and it's layers. Futhermore, using ```scikit-learn```for ```LabelBinarizer``` and ```classification_report```, and at last ```matplotlib```for visualisations.
+
 
 ## Usage (reproducing results)
 For this .py script the following should be written in the command line:
 - change directory to the folder /src 
-- write command: python image_search.py
+- write command: python self_assigned.py
 - when processing results there will be a messagge saying that the script has succeeded and the outputs can be seen in the output folder 
-
-The target image, as well as the most similar images can be seen in the output folder both as csv (with file informations) and as a visualisation where the images are plottet next to each other
 
 
 ## Discussion of results
 something about 
-- a user defined input (what that could do for the assignment and the reproducability 
-- the transision from a notebook to a .py script 
+- images instead of pixels 
+- the use of VGG16
 
