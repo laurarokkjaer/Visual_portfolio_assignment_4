@@ -1,3 +1,4 @@
+Link to repository: https://github.com/laurarokkjaer/Visual_portfolio_assignment_4
 # Visual Analytics - Spring 2022
 # Portfolio Assignment 4 - MY SELF-ASSIGNED PROJECT
 
