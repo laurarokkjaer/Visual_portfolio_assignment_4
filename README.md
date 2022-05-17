@@ -47,10 +47,16 @@ The methods used is ```tensorflow``` operations like ```ImageDataGenerator```, `
 
 
 ## Usage (reproducing results)
-For this .py script the following should be written in the command line:
-- change directory to the folder /src 
-- write command: python self_assigned.py
-- when processing results there will be a messagge saying that the script has succeeded and the outputs can be seen in the output folder 
+These are the steps you will need to follow in order to get the script running and working:
+- load the given data into ```input```
+- change your current working directory to the folder before src in order to get access to the input and utils folder as well 
+- the following should be written in the command line:
+
+      - cd src (changing the directory to the src folder in order to run the script)
+      
+      - python self_assigned.py (calling the function within the script)
+      
+- when processed results there will be a messagge saying that the script has succeeded and the outputs can be seen in the output folder 
 
 
 ## Discussion of results
