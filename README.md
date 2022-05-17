@@ -49,6 +49,7 @@ The methods used is ```tensorflow``` operations like ```ImageDataGenerator```, `
 ## Usage (reproducing results)
 These are the steps you will need to follow in order to get the script running and working:
 - load the given data into ```input```
+- make sure to install and import all necessities from ```requirements.txt``` 
 - change your current working directory to the folder before src in order to get access to the input and utils folder as well 
 - the following should be written in the command line:
 
