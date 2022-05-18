@@ -11,7 +11,7 @@ This repository contains the code and descriptions from the last self-assigned p
 | ----------- | ----------- |
 | ```in``` | Contains the input data (will be empty) |
 | ```out``` | Contains the results (outputs like plots or reports)  |
-| ```src``` | Contains code for assignment 1 |
+| ```src``` | Contains code for the self-assigned assignment 4 |
 | ```utils``` | Contains utility functions written by [Ross](https://pure.au.dk/portal/en/persons/ross-deans-kristensenmclachlan(29ad140e-0785-4e07-bdc1-8af12f15856c).html), and which have been used in the assignments |
 
 Also containing a ```MITLICENSE``` for guidelines of how to reproduce and use the data in this repository, as well as a ```.txt``` reqirements-file, where the required installments will be listed.
@@ -33,17 +33,16 @@ The goal of this assignment was to demonstrate my knowledge within deep learning
 ### Data source
 The data used in this assignment is from [kaggle](https://colab.research.google.com/github/RodolfoFerro/PyConCo20/blob/full-code/notebooks/Deep%20Learning%20Model.ipynb#scrollTo=59mL7DzN139i) (FER2013 dataset). 
 
+Download data from command line: 
+wget -O ../in/fer2013.csv https://www.dropbox.com/s/zi48lkarsg4kbry/fer2013.csv\?dl\=1
+
 Official data description from above link: 
 The csv file contains two main columns, "emotion" and "pixels". The "emotion" column contains a numeric code ranging from 0 to 6, inclusive, for the emotion that is present in the image. The "pixels" column contains a string surrounded in quotes for each image. The contents of this string a space-separated pixel values in row major order. test.csv contains only the "pixels" column and your task is to predict the emotion column.
 This dataset was prepared by Pierre-Luc Carrier and Aaron Courville, as part of an ongoing research project. They have graciously provided the workshop organizers with a preliminary version of their dataset to use for this contest.
 
 
-Download data from command line: 
-wget -O ../in/fer2013.csv https://www.dropbox.com/s/zi48lkarsg4kbry/fer2013.csv\?dl\=1
-
-
 ## Methods
-Frist of all I reused a helping function from [kaggle](https://colab.research.google.com/github/RodolfoFerro/PyConCo20/blob/full-code/notebooks/Deep%20Learning%20Model.ipynb#scrollTo=59mL7DzN139i), which helps loading the data as well as splits it into train_test (only a few adjustments in order to get it to run with my choise of methods). 
+Frist of all I reused a helping function from [kaggle](https://colab.research.google.com/github/RodolfoFerro/PyConCo20/blob/full-code/notebooks/Deep%20Learning%20Model.ipynb#scrollTo=59mL7DzN139i), which helps loading the data as well as splits it into train_test (only a few adjustments in order to get it to run with my choise of modelling methods). 
 The methods used is ```tensorflow``` operations like ```ImageDataGenerator```, ```load_img``` and ```img_to_array``` in terms of preprocessing, as well as initializing the model ```Sequential()``` and it's layers. Futhermore, using ```scikit-learn```for ```LabelBinarizer``` and ```classification_report```, and at last ```matplotlib``` for visualisations.
 
 
@@ -63,6 +62,5 @@ These are the steps you will need to follow in order to get the script running a
 
 ## Discussion of results
 something about 
-- images instead of pixels 
 - the use of VGG16
 
