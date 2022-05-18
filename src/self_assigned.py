@@ -43,7 +43,7 @@ def emotion_detection():
         """
 
         # Load and filter in Training/not Training data:
-        df = pd.read_csv('../Input/fer2013.csv')
+        df = pd.read_csv('Input/fer2013.csv')
         training = df.loc[df['Usage'] == 'Training']
         print(training.shape)
         testing = df.loc[df['Usage'] != 'Training']
@@ -155,7 +155,7 @@ def emotion_detection():
                                 target_names=labels)
     
     # Using .write to save the report in a .txt file in my outputfolder
-    with open('../output/emotions_report.txt', 'w') as my_txt_file:
+    with open('output/emotions_report.txt', 'w') as my_txt_file:
         my_txt_file.write(report)
     
     print("The following result is the classification report for my emotion detectio model. The results can be seen in the output-folder as well")
