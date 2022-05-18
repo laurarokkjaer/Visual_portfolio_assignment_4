@@ -107,7 +107,7 @@ def emotion_detection():
     model.add(Dense(7, 
                     activation = "softmax"))
     
-    #Training
+    # Training
     # Define the gradient descent 
     sgd = SGD(0.001)
     # Compile model (defining loss function, the optimizer, metrics)
@@ -158,7 +158,7 @@ def emotion_detection():
     with open('../output/emotions_report.txt', 'w') as my_txt_file:
         my_txt_file.write(report)
     
-    print("The following result is the classification report for my emotion detectio model. THe results can be seen in the output-folder as well")
+    print("The following result is the classification report for my emotion detectio model. The results can be seen in the output-folder as well")
     print(report)
     
 emotion_detection()
