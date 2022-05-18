@@ -1,4 +1,4 @@
-Link to repository: https://github.com/laurarokkjaer/Visual_portfolio_assignment_4
+
 # Visual Analytics - Spring 2022
 # Portfolio Assignment 4 - MY SELF-ASSIGNED PROJECT
 
@@ -9,8 +9,8 @@ This repository contains the code and descriptions from the last self-assigned p
 
 | **Folder** | **Description** |
 | ----------- | ----------- |
-| ```in``` | Contains the input data (will be empty) |
-| ```out``` | Contains the results (outputs like plots or reports)  |
+| ```input``` | Contains the input data (will be empty) |
+| ```output``` | Contains the results (outputs like plots or reports)  |
 | ```src``` | Contains code for the self-assigned assignment 4 |
 | ```utils``` | Contains utility functions written by [Ross](https://pure.au.dk/portal/en/persons/ross-deans-kristensenmclachlan(29ad140e-0785-4e07-bdc1-8af12f15856c).html), and which have been used in the assignments |
 
