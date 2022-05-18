@@ -61,6 +61,4 @@ These are the steps you will need to follow in order to get the script running a
 
 
 ## Discussion of results
-something about 
-- the use of VGG16
-
+The result of the script is a classification accuracy of 34%, but it would have been interesting to see if the accuracy could get any higher if another deep learning model was used. So for further development, one could try with the VGG16 model perhabs. Only this would require some CNN skills to fit a new shape of the data, since the dataset is greyscale images and the VGG16 only work with colour images where you have all three colour channels. 
